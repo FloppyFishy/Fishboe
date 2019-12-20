@@ -36,3 +36,5 @@ function includeHTML() {
         }
     }
 }
+
+includeHTML();
