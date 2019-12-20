@@ -1,164 +1,73 @@
 <!doctype html>
 <html>
-<head>
+    <head>
+        <title>Fishboe Home</title>
+        <meta charset="utf-8">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140794000-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-140794000-1');
+        </script>
+        
+        <!-- Site Icon -->
+        <link rel="icon" href="https://i.imgur.com/QUS9HQg.png">
+        
+        <!-- General items -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://raw.githubusercontent.com/FloppyFishy/Fishboe/master/new/Items/include_html.js?token=AKYE5BG4F4GAB47GHDSPODK57U6KG"></script>
+        <link rel="stylesheet" href="Items/Items.css">
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+        
+        <!-- Style -->
+        <style>
+            html { height: 100%; }
+            
+            body { height: 100%; }
+            
+            .headerBackground{
+                bottom: 0;
+                background-color:rgba(0,0,0,0.00);
+                margin: 0px;
+            }
+            
+            .header-item:hover { color: #574F24 !important; }
+            
+            .top {
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140794000-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+                background: -webkit-linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
+                background:    -moz-linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
+                background:         linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
+                position: fixed;
+                bottom:0;
+                width:100%;
+            }
+        </style>
+        <script>
+            function makeNavBar() {
+                var elem = document.getElementById('home');
+                elem.parentNode.removeChild(elem);
+                $( ".col-3" ).className = "col-4";
+            }
+        </script>
+	</head>
 
-  gtag('config', 'UA-140794000-1');
-</script>
+	<body>        
+        <div class="top" id="barContainer">
+            <div w3-include-html="Items/Header.html" class="headerBar"></div>
+        </div>
 
-<link rel="icon" href="imgs/icon.png">
-<style>
-html { 
-  background: url("imgs/fishy images.png") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-	
-body {
-  padding:0;
-  margin:0;
-}
-	
-table.d {
-  color:#FFFFFF;
-  font: 40px/1 'Baloo Bhai';
-  position: fixed;
-  bottom: 0;
-  table-layout: fixed;
-  width: 100%;  
-  text-shadow:-1px 1px 20px #000000;
-  margin: 5% auto 1%;
-}
-
-#navbott {
-  background: -webkit-linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
-  background:    -moz-linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
-  background:         linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
-   position: fixed;
-   bottom:0;
-   width:100%;
-   height:80px;
-}
-	
-#tex {
-   text-decoration:none;
-   color:#BDAE60;
-	font-size: 40px;
-	transition: font-size 0.5s;
-}
-	
-	#tex:hover {
-		font-size: 50px;
-	}
-
-@media (max-width: 793px){
-			table.d {
-		margin: auto;
-		margin-bottom: 30px;
-		padding-top: 40px;
-		padding-bottom: 10px;
-		align-items: center;
-		text-align: center;
-        font: 20px/1 'Baloo Bhai';
-	    font-size: 30px;
-  table-layout: fixed;
-  width: 100%;  
-  text-shadow:-1px 1px 20px #000000;
-  margin: 1% auto 1%;
-}
-	
-	#tex {
-   text-decoration:none;
-   color:#BDAE60;
-	font-size: 30px;
-	transition: font-size 0.5s;
-}
-	
-	#tex:hover {
-		font-size: 40px;
-	}
-}
-
-@media (max-width: 546px){
-			table.d {
-		margin: auto;
-		margin-bottom: 30px;
-		padding-top: 40px;
-		padding-bottom: 10px;
-		align-items: center;
-		text-align: center;
-        font: 20px/1 'Baloo Bhai';
-	    font-size: 20px;
-  table-layout: fixed;
-  width: 100%;  
-  text-shadow:-1px 1px 20px #000000;
-  margin: 1% auto 1%;
-}
-		#tex {
-   text-decoration:none;
-   color:#BDAE60;
-	font-size: 20px;
-	transition: font-size 0.5s;
-}
-	
-	#tex:hover {
-		font-size: 30px;
-	}
-	
-}
-
-@media (max-width: 379px){
-			table.d {
-		margin: auto;
-		margin-bottom: 30px;
-		padding-top: 40px;
-		padding-bottom: 10px;
-		align-items: center;
-		text-align: center;
-        font: 20px/1 'Baloo Bhai';
-	    font-size: 14px;
-  table-layout: fixed;
-  width: 100%;  
-  text-shadow:-1px 1px 20px #000000;
-  margin: 1% auto 1%;
-}
-	
-		#tex {
-   text-decoration:none;
-   color:#BDAE60;
-	font-size: 14px;
-	transition: font-size 0.5s;
-}
-	
-	#tex:hover {
-		font-size: 24px;
-	}
-}
-</style>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
-<title>Fishboe</title>
-</head>
-
-<body>
-	<div id="navbott"></div>
-	<table class="d">
-		<tr>
-			<th id="thisone" class="t"><a href="games.html" id="tex">Games</a></th>
-			<th id="thistwo" class="t"><a href="fishyswim.html" id="tex">Fishy Swim</a></th>
-			<th id="thisthree" class="t"><a href="3d.html" id="tex">3D Models</a></th>
-		</tr>
-	</table>
-</body>
-
+        <script>
+            includeHTML();
+		</script> 
+	</body>
 </html>

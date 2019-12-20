@@ -1,84 +1,56 @@
 <!doctype html>
 <html>
-<head>
-<link rel="stylesheet" href="css.css">
-<meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
-<script>
-function changeText()
-{
- var hi = document.getElementById('con').innerHTML;
- if (hi === 'Contact me')
- {
-	 document.getElementById('con').innerHTML = 'stephen@fishboe.com';
- } 
- else if (hi === 'stephen@fishboe.com') 
- {
-	 document.getElementById('con').innerHTML = 'Contact me';
- }
-}
-</script>
-<link rel="icon" href="imgs/icon.png">
-<title>Games</title>
-</head>
+    <head>
+        <title>Games</title>
+        <meta charset="utf-8">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140794000-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-140794000-1');
+        </script>
+        
+        <!-- Site Icon -->
+        <link rel="icon" href="https://i.imgur.com/QUS9HQg.png">
+        
+        <!-- General items -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://raw.githubusercontent.com/FloppyFishy/Fishboe/master/new/Items/include_html.js?token=AKYE5BG4F4GAB47GHDSPODK57U6KG"></script>
+        <link rel="stylesheet" href="Items/Items.css">
+        
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+        
+        <!-- Style -->
+        <style>
+            html { height: 100%; }
+            
+            body { height: 100%; }
+            
+            .header-item:hover { color: #574F24 !important; }
+            .header-item{font-size: 2vw;}
+        </style>
+        <script>
+            function makeNavBar() {
+                var elem = document.getElementById('home');
+                elem.parentNode.removeChild(elem);
+                $( ".col-3" ).className = "col-4";
+            }
+        </script>
+	</head>
 
-<body>
-	<header>
-	    <div>
-	      <h2>Games</h2>
-	    </div>
-	</header>
-	
-	<div id="divider"></div>
-	
-	<section>
+	<body>        
+        <div w3-include-html="Items/Header.html" class="headerBar"></div>
 
-		<div id="segement">
-		  <h3>Fish Pond</h3>
-          <iframe src="https://i.simmer.io/@Fishboe/fish-pond" style="width:1024px;height:576px;border:0"></iframe>
-          <p>Controls are shown upond first time playing. Takes time to get used to.</p>
-		</div>
-		
-	</section>
-	
-	<section>
-
-		<div id="segement">
-		  <h3>Floppy Fishy</h3>
-          <iframe src="https://i.simmer.io/@Fishboe/floppy-fish" style="width:1040px;height:500px;border:0"></iframe>
-          <p>Left click to flop, right click to pause and buy stuff.</p>
-		</div>
-		
-	</section>
-	
-	<footer>
-	  	  <table class="f">
-		<tr>
-			<th id="thisone" class="t">
-				<div id="divboi2">
-					<div style="padding-right: 50px">
-						<p><a id="con" onClick="changeText()">Contact me</a></p>
-					</div>
-					<div style="padding-right: 50px">
-						<p><a href="privacy.html" id="tex">Privacy Policy</a></p>
-					</div>
-		    		<div style="padding-right: 50px">
-						<p><a href="terms.html" id="tex">Terms of use</a></p>
-					</div>
-		    		 <div>
-						<p><a href="fishboe.html" id="tex">Home</a></p>
-					</div>
-			    </div>
-			</th>
-			
-			<th id="thistwo" class="t">
-				<div id="copyr">
-					<p>Copyright © 2019 Fishboe All rights reserved.</p>
-				</div>
-			</th>
-		</tr>
-	    </table>
-	</footer>
-</body>
-
+        <script>
+            includeHTML();
+		</script> 
+	</body>
 </html>
