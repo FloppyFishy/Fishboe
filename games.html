@@ -27,28 +27,25 @@
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
-        
-        <!-- Style -->
-        <style>
-            html { height: 100%; }
-            
-            body { height: 100%; }
-            
-            .header-item:hover { color: #574F24 !important; }
-            .header-item{font-size: 2vw;}
-        </style>
-        <script>
-            function makeNavBar() {
-                var elem = document.getElementById('home');
-                elem.parentNode.removeChild(elem);
-                $( ".col-3" ).className = "col-4";
-            }
-        </script>
 	</head>
 
 	<body>        
-        <div w3-include-html="Items/Header.html" class="headerBar"></div>
-
+        <div w3-include-html="Items/Header.html"></div>
+        
+        <div class="section">
+            <h1>Fish Pond</h1>
+            <div class="iframe-container"><iframe src="https://i.simmer.io/@Fishboe/fish-pond"></iframe></div>
+            <p>Controls are shown upon first time playing. Takes time to get used to.</p>
+        </div>
+        
+        <div class="section">
+            <h1>Floppy Fish</h1>
+            <div class="iframe-container"><iframe src="https://i.simmer.io/@Fishboe/floppy-fish"></iframe></div>
+            <p>Left click to flop, right click to pause and buy stuff.</p>
+        </div>
+        
+        <div w3-include-html="Items/Footer.html"></div>
+        
         <script>
             includeHTML();
 		</script> 

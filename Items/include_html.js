@@ -15,16 +15,19 @@ function includeHTML() {
                     if (this.status == 200) {elmnt.innerHTML = this.responseText; }
                     if (this.status == 404) {elmnt.innerHTML = "Page not found."; }
                     /* Remove the attribute, and call this function once more: */
-                    if(document.title == "Fishboe Home" && !doneIt){
-                        var cols = elmnt.getElementsByTagName("a");
-                        for(var i = 0; i < cols.length; i++) {
-                            if(cols[i].innerHTML == "Home"){
-                                cols[i].parentElement.parentElement.parentElement.removeChild(cols[i].parentElement.parentElement);
-                            }
-                            cols[i].parentElement.parentElement.className = "col-4";
+                    
+                    var navBarItem = elmnt.getElementsByTagName('li');
+                    for(var i = 0; i < navBarItem.length; i++) {
+                        if (navBarItem[i].innerHTML.includes("Home") && document.title == "Fishboe Home") {
+                            navBarItem[i].parentElement.removeChild(navBarItem[i]);
+                            break;
                         }
-                        doneIt = true;
+                        else if (navBarItem[i].innerHTML.includes(document.title)) {
+                            navBarItem[i].parentElement.removeChild(navBarItem[i]);
+                            break;
+                        }
                     }
+
                     elmnt.removeAttribute("w3-include-html");
                     includeHTML();
                 }

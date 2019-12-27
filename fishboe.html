@@ -34,14 +34,6 @@
             
             body { height: 100%; }
             
-            .headerBackground{
-                bottom: 0;
-                background-color:rgba(0,0,0,0.00);
-                margin: 0px;
-            }
-            
-            .header-item:hover { color: #574F24 !important; }
-            
             .top {
 
                 background: -webkit-linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
@@ -49,20 +41,28 @@
                 background:         linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
                 position: fixed;
                 bottom:0;
-                width:100%;
+            }
+            
+            .headerBackground{
+                border-radius: 20px;
+                background-color: rgba(0,0,0,0) !important;
+                padding: 1px;
+            }
+                
+            .header-item{
+                font-size: 50px;
+                padding: 0px !important;
+            }
+            
+            .header-col{
+                text-align: center;
+                padding: 1px;
             }
         </style>
-        <script>
-            function makeNavBar() {
-                var elem = document.getElementById('home');
-                elem.parentNode.removeChild(elem);
-                $( ".col-3" ).className = "col-4";
-            }
-        </script>
 	</head>
 
 	<body>        
-        <div class="top" id="barContainer">
+        <div class="top container-fluid" id="barContainer">
             <div w3-include-html="Items/Header.html" class="headerBar"></div>
         </div>
 
