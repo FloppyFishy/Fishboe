@@ -1,4 +1,12 @@
-﻿var doneIt = false;
+﻿$(function () {
+	$('#contactCollapse').on('shown.bs.collapse', function (e) {
+		$('html,body').animate({
+			scrollTop: $('#contactCollapse').offset().top -80
+		}, 500); 
+	}); 
+});
+
+var doneIt = false;
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
