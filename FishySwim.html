@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Fishboe Home</title>
+        <title>Fishy Swim</title>
         <meta charset="utf-8">
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,50 +22,43 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="include_html.js"></script>
         <link rel="stylesheet" href="Items.css">
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
-        
-        <!-- Style -->
-        <style>
-            html { height: 100%; }
-            
-            body { height: 100%; }
-            
-            .top {
-
-                background: -webkit-linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
-                background:    -moz-linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
-                background:         linear-gradient(rgba(0,0,0,0.00), rgba(0,0,0,0.50), rgba(0,0,0,0.70));
-                position: fixed;
-                bottom:0;
-            }
-            
-            .headerBackground{
-                border-radius: 20px;
-                background-color: rgba(0,0,0,0) !important;
-                padding: 1px;
-            }
-                
-            .header-item{
-                font-size: 50px;
-                padding: 0px !important;
-            }
-            
-            .header-col{
-                text-align: center;
-                padding: 1px;
-            }
-        </style>
 	</head>
 
-	<body>        
-        <div class="top container-fluid" id="barContainer">
-            <div w3-include-html="Header.html" class="headerBar"></div>
+	<body>
+    	<div class="top container-fluid">
+            <div w3-include-html="Header.html"></div>
+	    </div>
+        
+        <div class="section">
+            <h1>What happens?</h1>
+            <p>You play as a research scientist on an underwater submarine around the year 2050. Your team is researching deep sea creatures. Out of nowhere Fishy will bite a huge hole in the side of the submarine, killing everyone onboard except you. Stranded in the deep sea you will have to find metal scraps to repair the submarine, while also finding resources to sustain yourself.</p>
         </div>
-
+        
+        <div class="section">
+            <h1>Why</h1>
+            <p>because fishy smells lol</p>
+        </div>
+        
+		<div class="subtitle">
+			<h2>Development</h2>
+		</div>
+		
+		<div class="section">
+            <h1>Fishy</h1>
+            <p align="left">Fishy is a deep sea creature that lives in a cave. He is very territorial and will attack any object that comes close to his home, such as submarines. Fishy is alone in the sea, he is a mutation of another deep sea creature. This uniqueness makes him of great interest to scientists.</p>
+			<p align="left">To reproduce, Fishy will make a low pitched clicking sound, about 10 clicks per second. This sound can be replicated by a human by breathing in and restricting the vocal cords. Using this method, Fishy can attract females of the species he has mutated from. This species can provide sustenance to offspring from both male and female fish using concealed teats on the underside.</p>
+        </div>
+		
+		<div class="bottom container-fluid">
+            <div w3-include-html="Footer.html"></div>
+	    </div>
+        
         <script>
             includeHTML();
 		</script> 
