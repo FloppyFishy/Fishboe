@@ -1,8 +1,12 @@
 .text{
 	font-family: 'Baloo Bhai';
-	color: floralwhite;
+	color: #f7f7f7;
 	text-align: center;
 }
+
+.link{ color:#BDAE60 !important; }
+
+.link:hover { color: #574F24 !important; }
 
 .fa {
   padding: 20px;
@@ -38,6 +42,8 @@
 }
 
 .socialIcon{ height: 80px; }
+
+.model{ margin: 0rem 3.5rem 2rem 3.5rem; }
 
 .header-item:hover { color: #574F24 !important; }
 		
@@ -104,12 +110,12 @@ body {
 
 h1 {
     font: 3rem 'Baloo Bhai';
-	color: floralwhite;
+	color: #f7f7f7;
 }
 
 h2 {
 	font: 3.7rem 'Baloo Bhai';
-	color: floralwhite;
+	color: #f7f7f7;
     display: grid;
     grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
     align-items: center;
@@ -128,9 +134,9 @@ h2:after {
 	margin: 0rem 12rem 0rem 12rem;
 }
 
-p {
+p, .link {
     font: 1.5rem 'Baloo Bhai';
-	color: floralwhite;
+	color: #f7f7f7;
 	line-height: 19pt;
 }
 
@@ -143,7 +149,7 @@ p {
 
 .Title{
     font: 5vw/1 'Baloo Bhai';
-	color: floralwhite;
+	color: #f7f7f7;
     text-align: center;
     border-radius: 20px;
 	margin: 40px;
@@ -157,32 +163,35 @@ p {
     text-align: center;
     padding: 29px 44px 29px 44px;
 	margin: 4rem 17rem 4rem 17rem;
+	color: #f7f7f7;
     background-color: rgba(0,0,0,0.63);
 }
 
 .titleSide {
-    background-color: floralwhite;
+    background-color: #f7f7f7;
     border-radius: 40px;
     width: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1700px) {
     .section {
 		padding: 15px;
 		margin: 3rem 6rem 3rem 6rem;
     }
 	
+	.footer-item{ font-size: 1.4rem; }
 	.header-item{ font-size: 2rem; }
 	
 	.subtitle{ margin: 0rem 5rem 0rem 5rem; }
 	
 	.socialIcon{ height: 70px; }
+	.model{ margin: 0rem 3rem 1.4rem 3rem; }
 	
 	h1 { font: 2.5rem 'Baloo Bhai'; }
 	
 	h2 { font: 3.2rem 'Baloo Bhai'; }
 
-	p { font: 1.5rem 'Baloo Bhai'; line-height: 17pt; }
+	p, .link { font: 1.3rem 'Baloo Bhai'; line-height: 18pt; }
 }
 
 @media (max-width: 768px) {
@@ -196,11 +205,12 @@ p {
 	.footer-item{ font-size: 1.4rem; }
 	
 	.socialIcon{ height: 48px; }
+	.model{ margin: 0rem 2rem 1.2rem 2rem; }
 	
 	h1 { font: 2rem 'Baloo Bhai'; }
-	h2 { font: 2.7rem 'Baloo Bhai'; }
+	h2 { font: 2.35rem 'Baloo Bhai'; }
 
-	p { font: 1rem 'Baloo Bhai'; line-height: 13pt; }
+	p, .link { font: 1rem 'Baloo Bhai'; line-height: 15pt; }
 }
 @media (max-width: 401px){
 	.footer-item{
@@ -208,10 +218,11 @@ p {
 		font-size: 1rem;
 	}
 	
+	.model{ margin: 0rem 1.2rem 1rem 1.2rem; }
 	.socialIcon{ height: 23px; }
 	
 	h1 { font: 1rem 'Baloo Bhai'; }
 	h2 { font: 1.3rem 'Baloo Bhai'; }
 
-	p { font: 0.5rem 'Baloo Bhai'; line-height: 8pt; }
+	p, .link { font: 0.5rem 'Baloo Bhai'; line-height: 10pt; }
 }

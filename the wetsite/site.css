@@ -1,0 +1,25 @@
+/* CSS Document */
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+	background-color: #4E94B5 !important;
+}
+
+.nav-link{
+	color: black !important;
+}
+
+.header-bar{
+	background-color: #97B9BF;
+	text-align: center;
+	height: 80px;
+	font-size: 1.6rem;
+}
+
+.header-content{
+	text-align: center;
+	margin-left: 11rem;
+	margin-right: 11rem;
+}
