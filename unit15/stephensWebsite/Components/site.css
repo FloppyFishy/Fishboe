@@ -21,7 +21,9 @@ p { font-size: 0.7rem; }
 
 
 .header-bar{
-	background-color: #97B9BF;
+	background-image: url("../Images/StockImages/beans.png");
+	background-repeat: repeat;
+	background-size: cover;
 	text-align: center;
 	height: 80px;
 	font-size: 0.9rem;
