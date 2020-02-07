@@ -41,3 +41,7 @@ function includeHTML() {
 }
 
 includeHTML();
+
+function form(firstname, lastname, address, about, education, experience, email){
+	
+}
