@@ -39,25 +39,25 @@
 				<h3>Apply</h3>
 				<div class="row">
 					<div class="col-md">
-						<form>
+						<form name="jobForm">
 							<div class="form-group">
 								<div class="row">
 									<div class="col-md-6">
-										<input type="text" class="form-control" id="ApplyFirstname" placeholder="First name">
+										<input type="text" class="form-control" name="ApplyFirstname" placeholder="First name">
 									</div>
 									<div class="col-md-6">
-										<input type="text" class="form-control" id="ApplyLastName" placeholder="Last name">
+										<input type="text" class="form-control" name="ApplyLastName" placeholder="Last name">
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="ApplyAddress" placeholder="Address">
+								<input type="text" class="form-control" name="ApplyAddress" placeholder="Address">
 							</div>
 							<div class="form-group">
-								<textarea class="form-control" id="ApplyAbout" placeholder="About You" rows="3"></textarea>
+								<textarea class="form-control" name="ApplyAbout" placeholder="About You" rows="3"></textarea>
 							</div>
 							<div class="form-group">
-								<select class="form-control" id="ApplyEducation">
+								<select class="form-control" name="ApplyEducation">
 									<option value="" selected disabled>Highest Education Level</option>
 									<option value="">None</option>
 									<option value="">GCSE</option>
@@ -66,13 +66,13 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<input type="text" class="form-control" id="ApplyExperience" placeholder="Relevent Past Experience">
+								<input type="text" class="form-control" name="ApplyExperience" placeholder="Relevent Past Experience">
 							</div>
 							<div class="form-group">
-								<input type="email" class="form-control" id="ApplyEmail" placeholder="E-Mail Address">
+								<input type="email" class="form-control" name="ApplyEmail" placeholder="E-Mail Address">
 							</div>
 							<div class="text-center">
-								<button type="submit" onClick="form()" class="btn btn-primary cen px-4">Submit</button>
+								<button type="submit" onClick="jobForm()" class="btn cen px-4">Submit</button>
 							</div>
 						</form>
 					</div>
